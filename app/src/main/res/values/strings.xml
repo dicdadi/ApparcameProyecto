@@ -37,4 +37,17 @@
     <string name="solictar_imagen">Solictar imagen</string>
     <string name="desconectarse">Desconectarse</string>
     <string name="tarifas">Tarifas</string>
+    <string name="total_d_as">Total días:</string>
+    <string name="d_as">Días</string>
+    <string name="precio_por_d_a">Precio por día:</string>
+    <string name="lavado_externo">Lavado externo</string>
+    <string name="limpieza_interna">Limpieza interna</string>
+    <string name="funda_para_el_coche">Funda para el coche</string>
+    <string name="preciopordia">preciopordia</string>
+    <string name="plaexterno">pLaExterno</string>
+    <string name="pfunda">pFunda</string>
+    <string name="plainterno">pLaInterno</string>
+    <string name="total">TOTAL</string>
+    <string name="_0">0</string>
+    <string name="confirmar_solicitud">Confirmar solicitud</string>
 </resources>

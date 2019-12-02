@@ -14,6 +14,9 @@ public class MenuPrincipal extends AppCompatActivity {
         setContentView(R.layout.activity_menu_principal);
     }
 public void onSolicitarServicioAction(View view){
+    Intent loginInicio;
+    loginInicio = new Intent(this,SolicitarServicioActivity.class);
+    startActivity(loginInicio);
 
 }
     public void onDesconectarseAction(View view){
