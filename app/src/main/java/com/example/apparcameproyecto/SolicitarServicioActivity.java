@@ -15,8 +15,13 @@ import android.widget.DatePicker;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 
 public class SolicitarServicioActivity extends AppCompatActivity {
 
@@ -100,6 +105,28 @@ public class SolicitarServicioActivity extends AppCompatActivity {
             }
         },HOUR,MINUTE,true);
         timePickerDialog.show();
+    }
+    public void onSolicitarServicioAction(View view){
+
+        String dias;
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+            try {
+            Date fecha= dateFormat.parse(fechaEntregaText.getText().toString());
+            Date fecha2=dateFormat.parse(fechaRecogidaText.getText().toString());
+            long prueba=fecha2.getTime()-fecha.getTime();
+                long seconds = prueba / 1000;
+                long minutes = seconds / 60;
+                long hours = minutes / 60;
+                long days = hours / 24;
+                dias=String.valueOf(days);
+                int prueba2=fundaCoche.isChecked() ? 1 : 0;
+                Toast.makeText(getApplicationContext(),String.valueOf(prueba2), Toast.LENGTH_SHORT).show();
+        }catch (Exception e){
+                Toast.makeText(getApplicationContext(),"Debes introducir una fecha de entrada y de recogida del vehículo.", Toast.LENGTH_SHORT).show();
+        }
+
+
+
     }
 
 
