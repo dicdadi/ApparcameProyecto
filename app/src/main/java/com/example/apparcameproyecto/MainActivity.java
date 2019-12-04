@@ -138,6 +138,7 @@ public class MainActivity extends AppCompatActivity {
     private void irMenu(){
         Intent menuPrincipal;
         menuPrincipal = new Intent(this,MenuPrincipal.class);
+        menuPrincipal.putExtra("correo",emailEditText.getText().toString());
         startActivity(menuPrincipal);
     }
 }
