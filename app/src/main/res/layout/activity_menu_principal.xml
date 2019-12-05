@@ -6,21 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MenuPrincipal">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="73dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="16dp"
-        android:contentDescription="@string/solictar_imagen"
-        android:onClick="onSolicitarServicioAction"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.373"
-        app:srcCompat="@drawable/serviceicon" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="249dp"
@@ -33,10 +18,25 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.294"
+        app:layout_constraintHorizontal_bias="0.288"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37" />
+        app:layout_constraintVertical_bias="0.169" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="73dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/solictar_imagen"
+        android:onClick="onSolicitarServicioAction"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17"
+        app:srcCompat="@drawable/serviceicon" />
 
     <ImageView
         android:id="@+id/imageView8"
