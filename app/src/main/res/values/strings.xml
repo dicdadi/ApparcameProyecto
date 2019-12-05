@@ -50,4 +50,8 @@
     <string name="total">TOTAL</string>
     <string name="_0">0</string>
     <string name="confirmar_solicitud">Confirmar solicitud</string>
+    <string name="nuestros_precios">Nuestros precios</string>
+    <string name="correo">Correo</string>
+    <string name="redireccionayuda">RedireccionAyuda</string>
+    <string name="necesitas_ayuda">¿Necesitas ayuda?</string>
 </resources>

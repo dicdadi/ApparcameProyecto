@@ -21,6 +21,20 @@
         app:srcCompat="@android:drawable/ic_menu_revert" />
 
     <ImageButton
+        android:id="@+id/volverRegistroBoton4"
+        android:layout_width="61dp"
+        android:layout_height="48dp"
+        android:contentDescription="@string/volverallogin"
+        android:onClick="onVolverMenuAction"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.959"
+        app:srcCompat="@drawable/menu" />
+
+    <ImageButton
         android:id="@+id/calendarioEntradaImagen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,7 +46,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.076"
-        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+        app:srcCompat="@drawable/calendar" />
 
     <ImageButton
         android:id="@+id/horaEntradaImagen"
@@ -46,7 +60,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.142"
-        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+        app:srcCompat="@drawable/time" />
 
     <ImageButton
         android:id="@+id/calendarioSalidaImagen"
@@ -60,7 +74,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.217"
-        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+        app:srcCompat="@drawable/calendar" />
 
     <ImageButton
         android:id="@+id/horaSalidaImagen"
@@ -74,7 +88,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.292"
-        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+        app:srcCompat="@drawable/time" />
 
     <EditText
         android:id="@+id/marcaCocheSolicitud"
@@ -149,6 +163,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="8dp"
         android:text="@string/extras"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -209,7 +224,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/horaEntradaImagen"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.157" />
+        app:layout_constraintVertical_bias="0.141" />
 
     <TextView
         android:id="@+id/fechaEntregaVehiculo"
@@ -223,7 +238,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/calendarioEntradaImagen"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.092" />
+        app:layout_constraintVertical_bias="0.075" />
 
     <TextView
         android:id="@+id/fechaRecogidaVehiculo"
@@ -237,7 +252,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/calendarioSalidaImagen"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.231" />
+        app:layout_constraintVertical_bias="0.215" />
 
     <TextView
         android:id="@+id/horaRecogidaVehiculo"
@@ -251,6 +266,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/horaSalidaImagen"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.304" />
+        app:layout_constraintVertical_bias="0.29" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

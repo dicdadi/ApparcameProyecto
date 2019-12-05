@@ -4,25 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00273133"
     tools:context=".MainActivity"
-    tools:ignore="LabelFor"
-    >
+    tools:ignore="LabelFor">
 
-
-    <ImageView
-        android:id="@+id/logoInicio"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:contentDescription="@string/imagenlogoinicio"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.055"
-        app:srcCompat="@drawable/logotipo" />
 
     <EditText
         android:id="@+id/correoInicio"
@@ -30,10 +15,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
+        android:drawableStart="@drawable/email"
         android:ems="10"
+        android:hint="@string/correo"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
-        android:hint="@string/nombre"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -76,6 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
+        android:drawableStart="@drawable/password"
         android:ems="10"
         android:hint="@string/contrase_a"
         android:importantForAutofill="no"
@@ -85,5 +72,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.36" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="58dp"
+        android:layout_height="57dp"
+        android:contentDescription="@string/redireccionayuda"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/registrarseBoton"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/registrarseBoton"
+        app:layout_constraintTop_toBottomOf="@+id/registrarseBoton"
+        app:layout_constraintVertical_bias="0.381"
+        app:srcCompat="@drawable/aiuda" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,6 +7,20 @@
     tools:context=".facturaServicio">
 
     <ImageButton
+        android:id="@+id/volverRegistroBoton5"
+        android:layout_width="61dp"
+        android:layout_height="48dp"
+        android:contentDescription="@string/volverallogin"
+        android:onClick="onVolverMenuAction"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.959"
+        app:srcCompat="@drawable/menu" />
+
+    <ImageButton
         android:id="@+id/volverRegistroBoton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -137,8 +151,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.225"
         app:layout_constraintStart_toStartOf="@+id/textView19"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.136" />
+        app:layout_constraintTop_toTopOf="@+id/preciopordia"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView9"
