@@ -33,6 +33,7 @@ public class SolicitarServicioActivity extends AppCompatActivity {
     private CheckBox lavadoExterno, lavadoInterno, fundaCoche;
     private EditText marcaEdit, modeloEdit, matriculaEdit;
     private String correo;
+    Calendar prueba= Calendar.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,12 +67,14 @@ public class SolicitarServicioActivity extends AppCompatActivity {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
                 String fecha = (year + "-" + month + "-" + dayOfMonth);
+                prueba.set(year,month ,dayOfMonth,0,0);// la fecha que se elija será la fecha minima en el siguiente calendario
                 fechaEntregaText.setText(fecha);
             }
         }, YEAR, MONTH, DATE);
         datePickerDialog.getDatePicker().setMinDate(System.currentTimeMillis() - 1000);
         datePickerDialog.show();
-    }
+
+}
 
     public void onFechaRecogidaAction(View view) {
 
@@ -86,7 +89,7 @@ public class SolicitarServicioActivity extends AppCompatActivity {
                 fechaRecogidaText.setText(fecha);
             }
         }, YEAR, MONTH, DATE);
-        datePickerDialog.getDatePicker().setMinDate(System.currentTimeMillis() - 1000);
+        datePickerDialog.getDatePicker().setMinDate(prueba.getTimeInMillis() - 1000);
         datePickerDialog.show();
     }
 

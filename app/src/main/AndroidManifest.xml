@@ -11,15 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".facturaServicio"
+        <activity android:name=".Ayuda"></activity>
+        <activity
+            android:name=".facturaServicio"
             android:parentActivityName=".MenuPrincipal">
-
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuPrincipal" />
         </activity>
-        <activity android:name=".MenuPrincipal"
-            android:launchMode="singleTop"/>
+        <activity
+            android:name=".MenuPrincipal"
+            android:launchMode="singleTop" />
         <activity android:name=".SolicitarServicioActivity" />
         <activity android:name=".RegistroActivity" />
         <activity android:name=".MainActivity">

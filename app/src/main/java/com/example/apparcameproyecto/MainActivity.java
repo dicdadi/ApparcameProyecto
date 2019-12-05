@@ -125,6 +125,11 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+    public void irAyuda(View view){
+        Intent ayuda;
+        ayuda = new Intent(this,Ayuda.class);
+        startActivity(ayuda);
+    }
 
     private void irMenu() {
         Intent menuPrincipal;

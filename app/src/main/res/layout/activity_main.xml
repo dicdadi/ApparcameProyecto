@@ -24,14 +24,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.474" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.068" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="58dp"
         android:layout_height="57dp"
         android:contentDescription="@string/redireccionayuda"
+        android:onClick="irAyuda"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/registrarseBoton"
         app:layout_constraintHorizontal_bias="0.498"
@@ -55,8 +56,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.575" />
+        app:layout_constraintTop_toBottomOf="@+id/correoInicio"
+        app:layout_constraintVertical_bias="0.036" />
 
     <Button
         android:id="@+id/loginBoton"
@@ -71,8 +72,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.669" />
+        app:layout_constraintTop_toBottomOf="@+id/contrasenniaInicio"
+        app:layout_constraintVertical_bias="0.049" />
 
     <Button
         android:id="@+id/registrarseBoton"
@@ -96,10 +97,10 @@
         android:contentDescription="@string/imagenlogoinicio"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.111"
+        app:layout_constraintVertical_bias="0.034"
         app:srcCompat="@drawable/logofinal" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

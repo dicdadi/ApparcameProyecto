@@ -29,6 +29,11 @@ public class MenuPrincipal extends AppCompatActivity {
     public void noImplementado(View view) {
         Toast.makeText(getApplicationContext(), "Estamos trabajando en esta funcionalidad.", Toast.LENGTH_SHORT).show();
     }
+    public void irAyuda(View view){
+        Intent ayuda;
+        ayuda = new Intent(this,Ayuda.class);
+        startActivity(ayuda);
+    }
 
     public void onDesconectarseAction(View view) {
         finish();
